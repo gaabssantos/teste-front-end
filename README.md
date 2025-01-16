@@ -10,7 +10,7 @@ Neste projeto possuem os scripts:
 ### `npm start`
 
 Inicie o App no modo de desenvolvimento
-Open [http://localhost:3000](http://localhost:3000) para visitar no navegador.
+Abra [http://localhost:5173](http://localhost:5173) para visitar no navegador.
 
 ### `npm test`
 
