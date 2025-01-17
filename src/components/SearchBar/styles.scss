@@ -1,26 +1,33 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .search-bar {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  background-color: $white-2;
+  border-radius: 10px;
+  width: 630px;
+  padding: 14px 16px;
+
+  input {
+    border: 0;
+    width: 100%;
     background-color: $white-2;
-    border-radius: 10px;
-    width: 630px;
-    padding: 14px 16px;
+    font-size: $xsmall-size;
 
-    input {
-        border: 0;
-        width: 100%;
-        background-color: $white-2;
-        font-size: $xsmall-size;
-
-        &::placeholder {
-            color: $gray-1;
-            font-weight: 500;
-        }
-
-        &:focus {
-            outline: none;
-        }
+    &::placeholder {
+      color: $gray-1;
+      font-weight: 500;
     }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .search-bar {
+    width: 80%;
+    margin: 10px 0;
+  }
 }

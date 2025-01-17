@@ -14,3 +14,10 @@
     height: 24px;
   }
 }
+
+@media (max-width: 800px) {
+  .nav-bar {
+    margin: 30px 0;
+    flex-wrap: wrap;
+  }
+}
