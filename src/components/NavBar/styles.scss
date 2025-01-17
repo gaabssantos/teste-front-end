@@ -1,0 +1,16 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 32px;
+
+  img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+}
