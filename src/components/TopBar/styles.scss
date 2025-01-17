@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.top-bar {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 7px 0;
+}
+
+.benefit {
+    color: $gray-1;
+    font-weight: 500;
+    font-size: $xxsmall-size;
+    display: flex;
+    gap: 9px;
+}
+
+.highlight {
+    color: $highlight-color;
+    font-weight: 600;
+}
