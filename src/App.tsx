@@ -20,6 +20,7 @@ function App() {
       <RelatedProducts />
       <Partners />
       <Brands />
+      <RelatedProducts />
     </main>
   );
 }
