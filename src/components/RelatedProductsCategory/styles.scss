@@ -43,3 +43,23 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .related-products-category {
+    flex-wrap: wrap;
+  }
+
+  .category {
+    border: 0 !important;
+    border-top: 1px solid $gray-2 !important;
+    border-left: 1px solid $gray-2 !important;
+
+    &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+      border-bottom: 1px solid $gray-2 !important;
+    }
+
+    &:nth-child(3), &:nth-child(6) {
+      border-right: 1px solid $gray-2 !important;
+    }
+  }
+}

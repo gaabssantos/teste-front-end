@@ -22,3 +22,14 @@
     font-weight: 700;
   }
 }
+
+@media (max-width: 1000px) {
+  .products {
+    flex-wrap: wrap;
+
+    svg {
+      display: none;
+    }
+
+  }
+}

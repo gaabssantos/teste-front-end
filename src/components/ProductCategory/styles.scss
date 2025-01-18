@@ -4,3 +4,9 @@
     gap: 42px;
     margin: 39px 90px;
 }
+
+@media (max-width: 1000px) {
+    .product-category {
+        flex-wrap: wrap;
+    }
+}
