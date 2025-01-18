@@ -1,13 +1,18 @@
 import ProductCard from '../../components/ProductCard';
 import RelatedProductsCategory from '../../components/RelatedProductsCategory';
+import Subtitle from '../../components/Subtitle';
 import ArrowIcon from '../../icons/ArrowIcon';
 import './styles.scss';
 
-const RelatedProducts = () => {
+type RelatedProductsProps = {
+  isFirstSection?: boolean;
+};
+
+const RelatedProducts = ({ isFirstSection }: RelatedProductsProps) => {
   return (
     <section className="related-products">
-      <h2>Produtos relacionados</h2>
-      <RelatedProductsCategory />
+      <Subtitle>Produtos relacionados</Subtitle>
+      {!isFirstSection ? <p>Ver todos</p> : <RelatedProductsCategory />}
       <div className="products">
         <ArrowIcon arrow="left" />
         <ProductCard />

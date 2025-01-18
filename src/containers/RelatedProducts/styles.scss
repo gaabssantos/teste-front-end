@@ -16,10 +16,11 @@
     }
   }
 
-  h2 {
-    color: $secondary-color;
-    font-size: $xmedium-size;
+  p {
+    color: $black;
+    font-size: $small-size;
     font-weight: 700;
+    margin-bottom: 25px;
   }
 }
 

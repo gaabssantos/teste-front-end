@@ -14,6 +14,8 @@ function App() {
       <CategoriesBar />
       <Banner />
       <ProductCategory />
+      <RelatedProducts isFirstSection />
+      <Partners />
       <RelatedProducts />
       <Partners />
     </main>
