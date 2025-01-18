@@ -7,3 +7,11 @@
     gap: 42px;
   }
 }
+
+@media (max-width: 1000px) {
+  .brands {
+    .brands-container {
+      flex-wrap: wrap;
+    }
+  }
+}
