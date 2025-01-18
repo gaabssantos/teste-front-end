@@ -10,7 +10,7 @@
   margin-top: 11px;
 
   h1 {
-    width: 40%;
+    width: 45%;
     color: $white;
     font-size: $big-size;
     font-weight: 600;
@@ -33,6 +33,7 @@
 @media (max-width: 800px) {
   .banner {
     text-align: center;
+    height: 400px;
 
     h1 {
       width: 100%;
