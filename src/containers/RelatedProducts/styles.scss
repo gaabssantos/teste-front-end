@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.related-products {
+  text-align: center;
+
+  .products {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  h2 {
+    color: $secondary-color;
+    font-size: $xmedium-size;
+    font-weight: 700;
+  }
+}

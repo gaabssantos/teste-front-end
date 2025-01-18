@@ -3,6 +3,7 @@ import CategoriesBar from './components/CategoriesBar';
 import NavBar from './components/NavBar';
 import ProductCategory from './components/ProductCategory';
 import TopBar from './components/TopBar';
+import RelatedProducts from './containers/RelatedProducts';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <CategoriesBar />
       <Banner />
       <ProductCategory />
+      <RelatedProducts />
     </main>
   );
 }

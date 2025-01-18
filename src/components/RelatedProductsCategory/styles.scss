@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.related-products-category {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 24px;
+
+  .category {
+    display: flex;
+    padding: 12px 58px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    color: $black-2;
+    font-weight: 400;
+
+    &.active {
+      font-weight: 700;
+      color: $highlight-color;
+    }
+
+    &:first-child {
+      border-left: 1px solid $gray-2;
+    }
+
+    @each $side,
+      $style
+        in (
+          top: (
+              1px solid $gray-2,
+            ),
+          right: (
+              1px solid $gray-2,
+            ),
+          bottom: (
+              1px solid $gray-2,
+            )
+        )
+    {
+      border-#{$side}: $style;
+    }
+  }
+}
