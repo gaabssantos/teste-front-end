@@ -1,6 +1,7 @@
 import Banner from './components/Banner';
 import CategoriesBar from './components/CategoriesBar';
 import NavBar from './components/NavBar';
+import ProductCategory from './components/ProductCategory';
 import TopBar from './components/TopBar';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <CategoriesBar />
       <Banner />
+      <ProductCategory />
     </main>
   );
 }
