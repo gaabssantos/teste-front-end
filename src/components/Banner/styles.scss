@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 85.04%),
+    url('../../assets/Banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  padding: 78px 81px;
+  margin-top: 11px;
+
+  h1 {
+    width: 40%;
+    color: $white;
+    font-size: $big-size;
+    font-weight: 600;
+    line-height: 50px;
+  }
+
+  h2 {
+    font-size: $medium-size;
+    color: $white;
+    font-weight: 400;
+    margin-bottom: 41px;
+
+    span.highlight {
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .banner {
+    text-align: center;
+
+    h1 {
+      width: 100%;
+    }
+  }
+}
