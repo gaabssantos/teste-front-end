@@ -1,8 +1,8 @@
 import './styles.scss';
 
-import SafePurchase from '../../assets/icons/SafePurchase.svg';
-import FreeShipping from '../../assets/icons/FreeShipping.svg';
-import Pay from '../../assets/icons/Pay.svg';
+import SafePurchase from '../../assets/icons/TopBar/SafePurchase.svg';
+import FreeShipping from '../../assets/icons/TopBar/FreeShipping.svg';
+import Pay from '../../assets/icons/TopBar/Pay.svg';
 
 const TopBar = () => {
   return (
