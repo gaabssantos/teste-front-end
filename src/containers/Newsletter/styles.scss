@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.newsletter {
+  background-color: $terciary-color;
+  display: flex;
+  font-family: $secondary-font;
+  color: $white;
+  padding: 40px 80px;
+  margin-top: 90.5px;
+
+  h3 {
+    font-weight: 600;
+    line-height: 120%;
+    font-size: $medium-size;
+  }
+
+  p {
+    font-weight: 300;
+    width: 85%;
+    font-size: $xsmall-size;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    input[type='text'] {
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: 1px solid #e7e7e7;
+    }
+
+    button {
+      text-transform: uppercase;
+    }
+  }
+
+  .terms {
+    margin-top: 8px;
+
+    span {
+      margin-left: 4px;
+      font-size: $xsmall-size;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import ProductCategory from './components/ProductCategory';
 import TopBar from './components/TopBar';
 import Brands from './containers/Brands';
+import Newsletter from './containers/Newsletter';
 import Partners from './containers/Partners';
 import RelatedProducts from './containers/RelatedProducts';
 
@@ -21,6 +22,7 @@ function App() {
       <Partners />
       <Brands />
       <RelatedProducts />
+      <Newsletter />
     </main>
   );
 }
