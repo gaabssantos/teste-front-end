@@ -1,0 +1,14 @@
+.partners {
+  width: 87%;
+  margin: 90px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+
+@media (max-width: 800px) {
+  .partners {
+    flex-wrap: wrap;
+  }
+}

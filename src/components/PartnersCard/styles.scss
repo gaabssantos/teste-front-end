@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.partners-card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 120.04%),
+    url('../../assets/Partners.png');
+  width: 50%;
+  border-radius: 20px;
+  padding: 40px;
+  width: 50%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: $white;
+
+  button {
+    text-transform: uppercase;
+    width: 40%;
+    margin-top: 32px;
+  }
+
+  p {
+    width: 40%;
+    font-size: $small-size;
+    margin-top: 8px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: $regular-size;
+  }
+}
+
+@media (max-width: 800px) {
+  .partners-card {
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .partners-card {
+    button {
+      width: 100%;
+    }
+  }
+}
