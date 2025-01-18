@@ -3,6 +3,7 @@ import CategoriesBar from './components/CategoriesBar';
 import NavBar from './components/NavBar';
 import ProductCategory from './components/ProductCategory';
 import TopBar from './components/TopBar';
+import Brands from './containers/Brands';
 import Partners from './containers/Partners';
 import RelatedProducts from './containers/RelatedProducts';
 
@@ -18,6 +19,7 @@ function App() {
       <Partners />
       <RelatedProducts />
       <Partners />
+      <Brands />
     </main>
   );
 }
