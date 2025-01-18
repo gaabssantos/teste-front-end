@@ -1,6 +1,6 @@
 import './styles.scss';
 
-import Subscribe from '../../assets/icons/Subscribe.svg';
+import Subscribe from '../../assets/icons/CategoriesBar/Subscribe.svg';
 
 const CategoriesBar = () => {
   return (
