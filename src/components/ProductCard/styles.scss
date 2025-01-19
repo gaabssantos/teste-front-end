@@ -14,24 +14,35 @@
     font-weight: 400;
     text-decoration: line-through;
     margin-top: 12px;
+    margin: 0;
   }
 
   #current-price {
     font-size: 20px;
     font-weight: 700;
+    margin: 0;
   }
 
   #parcel {
     margin-bottom: 7px;
   }
 
-  #parcel, #shipping {
+  #parcel,
+  #shipping {
     font-weight: 400;
     font-size: $xxsmall-size;
   }
 
   #shipping {
     color: $secondary-color;
+    margin-bottom: 12px;
+  }
+
+  #product-name {
+    color: $black;
+    font-size: $small-size;
+    font-weight: 300;
+    width: 275.852px;
     margin-bottom: 12px;
   }
 
