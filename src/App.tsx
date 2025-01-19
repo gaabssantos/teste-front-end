@@ -1,5 +1,6 @@
 import Banner from './components/Banner';
 import CategoriesBar from './components/CategoriesBar';
+import Modal from './components/Modal';
 import NavBar from './components/NavBar';
 import ProductCategory from './components/ProductCategory';
 import TopBar from './components/TopBar';
@@ -25,6 +26,7 @@ function App() {
       <RelatedProducts />
       <Newsletter />
       <Footer />
+      <Modal />
     </main>
   );
 }
