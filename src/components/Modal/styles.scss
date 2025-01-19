@@ -21,6 +21,9 @@
     display: flex;
     gap: 87px;
     color: $black;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     .price {
       font-size: 20px;
@@ -63,6 +66,7 @@
 
       button {
         width: 100%;
+        text-transform: uppercase;
       }
     }
 

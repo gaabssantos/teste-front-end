@@ -1,4 +1,8 @@
-const PlusIcon = () => {
+type PlusIconProps = {
+  onClick: () => void;
+};
+
+const PlusIcon = ({ onClick }: PlusIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +10,7 @@ const PlusIcon = () => {
       height="21"
       viewBox="0 0 21 21"
       fill="none"
+      onClick={onClick}
     >
       <path
         d="M10.6924 4.49585V15.9504"

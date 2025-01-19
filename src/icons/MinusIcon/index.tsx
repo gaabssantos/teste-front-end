@@ -1,4 +1,8 @@
-const MinusIcon = () => {
+type MinusIconProps = {
+  onClick: () => void;
+};
+
+const MinusIcon = ({ onClick }: MinusIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +10,7 @@ const MinusIcon = () => {
       height="21"
       viewBox="0 0 21 21"
       fill="none"
+      onClick={onClick}
     >
       <path
         d="M4.53812 10.2231H16.3843"

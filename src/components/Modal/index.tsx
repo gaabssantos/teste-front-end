@@ -5,9 +5,12 @@ import MinusIcon from '../../icons/MinusIcon';
 import PlusIcon from '../../icons/PlusIcon';
 import Button from '../Button';
 import { useModal } from '../../context/useModal';
+import { useState } from 'react';
 
 const Modal = () => {
   const modal = useModal();
+
+  const [quantity, setQuantity] = useState<number>(1);
 
   return (
     <div className="modal" onClick={() => modal.toggleModal()}>
@@ -25,9 +28,15 @@ const Modal = () => {
           <p className="see-more">Veja mais detalhes do produto {'>'}</p>
           <div className="actions">
             <div className="quantity-input">
-              <MinusIcon />
-              <p className="quantity">01</p>
-              <PlusIcon />
+              <MinusIcon
+                onClick={() => {
+                  if (quantity > 1) {
+                    setQuantity((prev) => prev - 1);
+                  }
+                }}
+              />
+              <p className="quantity">{quantity}</p>
+              <PlusIcon onClick={() => setQuantity((prev) => (prev += 1))} />
             </div>
             <Button type="yellow">Comprar</Button>
           </div>
