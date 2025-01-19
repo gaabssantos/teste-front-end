@@ -1,0 +1,88 @@
+@import '../../styles/variables';
+
+.footer {
+  .main-content {
+    padding: 42px 90px;
+    display: flex;
+
+    p {
+      width: 75%;
+      margin-bottom: 27px;
+    }
+
+    .social-media {
+      display: flex;
+      gap: 26px;
+    }
+  }
+
+  .left-side {
+    border-right: 1px solid rgba(40, 40, 40, 0.18);
+    width: 35%;
+  }
+
+  .right-side {
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    ul {
+      list-style-type: none;
+    }
+
+    h4 {
+      color: rgba(34, 34, 34, 0.71);
+      font-size: $small-size;
+      font-weight: 700;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      color: rgba(34, 34, 34, 0.71);
+      font-family: 'Work Sans';
+      font-size: $xsmall-size;
+      font-weight: 400;
+      margin-bottom: 16px;
+      cursor: pointer;
+      transition: 0.1s;
+
+      &:hover {
+        color: $highlight-color;
+      }
+    }
+  }
+
+  .bottom {
+    text-align: center;
+
+    p {
+      padding: 13px;
+    }
+  }
+
+  p {
+    color: $black;
+    font-size: $xsmall-size;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    .left-side {
+      width: 100%;
+      border: 0;
+    }
+
+    .right-side {
+      padding: 0;
+      padding-top: 20px;
+    }
+  }
+}
