@@ -15,16 +15,16 @@ const PlusIcon = ({ onClick }: PlusIconProps) => {
       <path
         d="M10.6924 4.49585V15.9504"
         stroke="#271C47"
-        stroke-width="2"
-        stroke-linecap="square"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="square"
+        strokeLinejoin="round"
       />
       <path
         d="M4.76859 10.2231H16.6147"
         stroke="#271C47"
-        stroke-width="2"
-        stroke-linecap="square"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="square"
+        strokeLinejoin="round"
       />
     </svg>
   );

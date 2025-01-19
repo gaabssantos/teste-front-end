@@ -15,9 +15,9 @@ const MinusIcon = ({ onClick }: MinusIconProps) => {
       <path
         d="M4.53812 10.2231H16.3843"
         stroke="#9F9F9F"
-        stroke-width="2"
-        stroke-linecap="square"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="square"
+        strokeLinejoin="round"
       />
     </svg>
   );

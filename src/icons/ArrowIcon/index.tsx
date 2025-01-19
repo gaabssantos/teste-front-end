@@ -1,8 +1,9 @@
 type ArrowIconProps = {
   arrow: 'left' | 'right';
+  onClick: () => void;
 };
 
-const ArrowIcon = ({ arrow }: ArrowIconProps) => {
+const ArrowIcon = ({ arrow, onClick }: ArrowIconProps) => {
   if (arrow === 'left') {
     return (
       <svg
@@ -11,6 +12,7 @@ const ArrowIcon = ({ arrow }: ArrowIconProps) => {
         height="41"
         viewBox="0 0 41 41"
         fill="none"
+        onClick={onClick}
       >
         <g filter="url(#filter0_d_12729_198)">
           <circle cx="20.5" cy="16.524" r="16" fill="white" />
@@ -27,9 +29,9 @@ const ArrowIcon = ({ arrow }: ArrowIconProps) => {
             width="40"
             height="40"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -66,6 +68,7 @@ const ArrowIcon = ({ arrow }: ArrowIconProps) => {
         height="41"
         viewBox="0 0 41 41"
         fill="none"
+        onClick={onClick}
       >
         <g filter="url(#filter0_d_12729_201)">
           <circle
@@ -88,9 +91,9 @@ const ArrowIcon = ({ arrow }: ArrowIconProps) => {
             width="40"
             height="40"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
