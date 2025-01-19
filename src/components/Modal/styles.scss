@@ -97,3 +97,29 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .modal {
+    .modal-box {
+      width: 90%;
+      height: 90%;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  .modal {
+    .modal-box {
+      width: 80%;
+      height: 85%;
+      flex-direction: column;
+      gap: 0;
+
+      .actions {
+        margin: 32px auto;
+      }
+    }
+  }
+}
