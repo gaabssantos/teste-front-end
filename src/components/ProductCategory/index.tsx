@@ -2,37 +2,37 @@ import './styles.scss';
 
 import ProductCategoryCard from '../ProductCategoryCard';
 
-import Technology from '../../assets/icons/ProductCategory/Technology.svg';
-import Supermarket from '../../assets/icons/ProductCategory/Supermarket.svg';
-import Drinks from '../../assets/icons/ProductCategory/Drinks.svg';
-import Tools from '../../assets/icons/ProductCategory/Tools.svg';
-import Health from '../../assets/icons/ProductCategory/Health.svg';
-import Sports from '../../assets/icons/ProductCategory/Sports.svg';
-import Fashion from '../../assets/icons/ProductCategory/Fashion.svg';
+import DrinksIcon from '../../icons/DrinksIcon';
+import FashionIcon from '../../icons/FashionIcon';
+import HealthIcon from '../../icons/HealthIcon';
+import SportsIcon from '../../icons/SportsIcon';
+import SupermarketIcon from '../../icons/SupermarketIcon';
+import TechnologyIcon from '../../icons/TechnologyIcon';
+import ToolsIcon from '../../icons/ToolsIcon';
 
 const ProductCategory = () => {
   return (
     <div className="product-category">
       <ProductCategoryCard categoryName="Tecnologia" isActive>
-        <img src={Technology} alt="icone-tecnologia" />
+        <TechnologyIcon />
       </ProductCategoryCard>
       <ProductCategoryCard categoryName="Supermercado">
-        <img src={Supermarket} alt="icone-supermercado" />
+        <SupermarketIcon />
       </ProductCategoryCard>
       <ProductCategoryCard categoryName="Bebidas">
-        <img src={Drinks} alt="icone-bebidas" />
+        <DrinksIcon />
       </ProductCategoryCard>
       <ProductCategoryCard categoryName="Ferramentas">
-        <img src={Tools} alt="icone-ferramentas" />
+        <ToolsIcon />
       </ProductCategoryCard>
       <ProductCategoryCard categoryName="Saúde">
-        <img src={Health} alt="icone-saude" />
+        <HealthIcon />
       </ProductCategoryCard>
       <ProductCategoryCard categoryName="Esportes e Fitness">
-        <img src={Sports} alt="icone-esportes-e-fitness" />
+        <SportsIcon />
       </ProductCategoryCard>
       <ProductCategoryCard categoryName="Moda">
-        <img src={Fashion} alt="icone-moda" />
+        <FashionIcon />
       </ProductCategoryCard>
     </div>
   );

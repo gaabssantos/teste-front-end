@@ -1,6 +1,6 @@
 import './styles.scss';
 
-import Logo from '../../assets/Logo.svg';
+import Logo from '../../assets/Logo.png';
 import SearchBar from '../SearchBar';
 
 import FavoritesIcon from '../../icons/FavoritesIcon';

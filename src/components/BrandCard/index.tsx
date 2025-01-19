@@ -1,4 +1,4 @@
-import BrandLogo from '../../assets/Logo.svg';
+import BrandLogo from '../../assets/Logo.png';
 
 import './styles.scss';
 

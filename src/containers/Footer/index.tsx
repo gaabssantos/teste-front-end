@@ -1,6 +1,6 @@
 import './styles.scss';
 
-import Logo from '../../assets/Logo.svg';
+import Logo from '../../assets/Logo.png';
 import InstagramIcon from '../../icons/InstagramIcon';
 import FacebookIcon from '../../icons/FacebookIcon';
 import LinkedinIcon from '../../icons/LinkedinIcon';

@@ -1,26 +1,26 @@
 import './styles.scss';
 
-import SafePurchase from '../../assets/icons/TopBar/SafePurchase.svg';
-import FreeShipping from '../../assets/icons/TopBar/FreeShipping.svg';
-import Pay from '../../assets/icons/TopBar/Pay.svg';
+import FreeShippingIcon from '../../icons/FreeShippingIcon';
+import PayIcon from '../../icons/PayIcon';
+import SafePurchaseIcon from '../../icons/SafePurchaseIcon';
 
 const TopBar = () => {
   return (
     <div className="top-bar">
       <div className="benefit">
-        <img src={SafePurchase} alt="icone-compra-segura" />
+        <SafePurchaseIcon />
         <p>
           Compra <span className="highlight">100% segura</span>
         </p>
       </div>
       <div className="benefit">
-        <img src={FreeShipping} alt="icone-frete-gratis" />
+        <FreeShippingIcon />
         <p>
           <span className="highlight">Frete grátis</span> acima de R$ 200
         </p>
       </div>
       <div className="benefit">
-        <img src={Pay} alt="icone-compra-segura" />
+        <PayIcon />
         <p>
           <span className="highlight">Parcele</span> suas compras
         </p>

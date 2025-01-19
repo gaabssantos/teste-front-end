@@ -1,6 +1,6 @@
 import './styles.scss';
 
-import Subscribe from '../../assets/icons/CategoriesBar/Subscribe.svg';
+import SubscribeIcon from '../../icons/SubscribeIcon';
 
 const CategoriesBar = () => {
   return (
@@ -12,7 +12,7 @@ const CategoriesBar = () => {
       <p className="category-name">Lançamentos</p>
       <p className="category-name highlight">Ofertas do dia</p>
       <div className="subscribe">
-        <img src={Subscribe} alt="icone-assinatura" />
+        <SubscribeIcon />
         <p className="category-name">Assinatura</p>
       </div>
     </div>
