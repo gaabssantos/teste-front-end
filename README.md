@@ -3,6 +3,14 @@
 # Bem-vindo(a)
 Seja bem-vindo(a) para o teste de Desenvolvedor Front-End da Econverse, algumas instruções para utilização:
 
+# Iniciando
+
+Para iniciar o projeto, é necessário instalar as dependências, para isso podemos utilizar:
+
+### `npm install`
+
+Irá fazer com que seja adicionado a node_modules, após o ``git clone``.
+
 # Scripts disponíveis
 
 Neste projeto possuem os scripts:
