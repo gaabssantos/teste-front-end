@@ -6,13 +6,30 @@
   .products {
     display: flex;
     gap: 18px;
-    justify-content: center;
     align-items: center;
     width: 95%;
     margin: 0 auto;
+    overflow: hidden;
+
+    .carousel-track {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
 
     svg {
       cursor: pointer;
+      z-index: 99;
+      position: absolute;
+
+      &:first-child {
+        left: 0;
+      }
+
+      &:last-child {
+        right: 0;
+      }
     }
   }
 
@@ -26,11 +43,12 @@
 
 @media (max-width: 1000px) {
   .products {
-    flex-wrap: wrap;
+    .carousel-track {
+      flex-wrap: wrap;
+    }
 
     svg {
       display: none;
     }
-
   }
 }
