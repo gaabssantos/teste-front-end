@@ -1,11 +1,11 @@
 import './styles.scss';
 
-import ProductImage from '../../assets/ProductImage.svg';
 import MinusIcon from '../../icons/MinusIcon';
 import PlusIcon from '../../icons/PlusIcon';
 import Button from '../Button';
 import { useModal } from '../../context/useModal';
 import { useState } from 'react';
+import { numberFormat } from '../../utils/NumberFormat';
 
 const Modal = () => {
   const modal = useModal();
@@ -16,14 +16,17 @@ const Modal = () => {
     <div className="modal" onClick={() => modal.toggleModal()}>
       <div className="modal-box" onClick={(e) => e.stopPropagation()}>
         <div className="left-side">
-          <img src={ProductImage} alt="imagem-do-produto" />
+          <img src={modal.currentProduct?.photo} alt="imagem-do-produto" />
         </div>
         <div className="right-side">
-          <h3>LOREM IPSUM DOLOR SIT AMET</h3>
-          <p className="price">R$ 1.499,90</p>
+          <h3>{modal.currentProduct?.productName}</h3>
+          <p className="price">
+            {modal.currentProduct
+              ? numberFormat(modal.currentProduct?.price / 100)
+              : ''}
+          </p>
           <p className="description">
-            Many desktop publishing packages and web page editors now many
-            desktop publishing
+            {modal.currentProduct?.descriptionShort}
           </p>
           <p className="see-more">Veja mais detalhes do produto {'>'}</p>
           <div className="actions">

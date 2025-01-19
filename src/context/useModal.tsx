@@ -1,8 +1,18 @@
-import { createContext, ReactNode, useContext, useState } from 'react';
+import {
+  createContext,
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  useContext,
+  useState,
+} from 'react';
+import { IProducts } from '../interface/Products';
 
 interface IModalType {
   isOpen: boolean;
   toggleModal: () => void;
+  currentProduct: IProducts | undefined;
+  setCurrentProduct: Dispatch<SetStateAction<IProducts | undefined>>;
 }
 
 const ModalContext = createContext<IModalType | undefined>(undefined);
@@ -13,6 +23,9 @@ interface IModalProviderProps {
 
 export const ModalProvider = ({ children }: IModalProviderProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [currentProduct, setCurrentProduct] = useState<IProducts | undefined>(
+    undefined,
+  );
 
   const toggleModal = (): void => {
     setIsOpen((prev) => !prev);
@@ -21,6 +34,8 @@ export const ModalProvider = ({ children }: IModalProviderProps) => {
   const value: IModalType = {
     isOpen,
     toggleModal,
+    currentProduct,
+    setCurrentProduct,
   };
 
   return (
