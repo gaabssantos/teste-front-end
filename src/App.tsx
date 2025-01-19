@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Banner from './components/Banner';
 import CategoriesBar from './components/CategoriesBar';
 import Modal from './components/Modal';
@@ -9,8 +10,20 @@ import Footer from './containers/Footer';
 import Newsletter from './containers/Newsletter';
 import Partners from './containers/Partners';
 import RelatedProducts from './containers/RelatedProducts';
+import { useModal } from './context/useModal';
 
 function App() {
+  const modal = useModal();
+
+  useEffect(() => {
+    if (modal.isOpen) {
+      document.body.style.overflow = 'hidden';
+      window.scrollTo(0, 0);
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  });
+
   return (
     <main className="container">
       <TopBar />
@@ -26,7 +39,7 @@ function App() {
       <RelatedProducts />
       <Newsletter />
       <Footer />
-      <Modal />
+      {modal.isOpen && <Modal />}
     </main>
   );
 }

@@ -2,8 +2,11 @@ import './styles.scss';
 
 import ProductImage from '../../assets/ProductImage.svg';
 import Button from '../Button';
+import { useModal } from '../../context/useModal';
 
 const ProductCard = () => {
+  const modal = useModal();
+
   return (
     <div className="product-card">
       <img src={ProductImage} alt="imagem-do-produto" />
@@ -14,7 +17,9 @@ const ProductCard = () => {
       <p id="current-price">R$ 28,90</p>
       <p id="parcel">ou 2x de R$ 49,95 sem juros</p>
       <p id="shipping">Frete grátis</p>
-      <Button type="purple">Comprar</Button>
+      <Button type="purple" onClick={() => modal.toggleModal()}>
+        Comprar
+      </Button>
     </div>
   );
 };

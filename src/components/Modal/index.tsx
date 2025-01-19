@@ -4,11 +4,14 @@ import ProductImage from '../../assets/ProductImage.svg';
 import MinusIcon from '../../icons/MinusIcon';
 import PlusIcon from '../../icons/PlusIcon';
 import Button from '../Button';
+import { useModal } from '../../context/useModal';
 
 const Modal = () => {
+  const modal = useModal();
+
   return (
-    <div className="modal">
-      <div className="modal-box">
+    <div className="modal" onClick={() => modal.toggleModal()}>
+      <div className="modal-box" onClick={(e) => e.stopPropagation()}>
         <div className="left-side">
           <img src={ProductImage} alt="imagem-do-produto" />
         </div>

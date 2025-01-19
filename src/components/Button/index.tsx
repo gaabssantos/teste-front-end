@@ -4,9 +4,10 @@ import './styles.scss';
 type ButtonProps = {
   type: 'yellow' | 'purple';
   children: ReactNode;
+  onClick?: () => void;
 };
 
-const Button = ({ type, children }: ButtonProps) => {
+const Button = ({ type, children, onClick }: ButtonProps) => {
   return (
     <button
       className={
@@ -14,6 +15,7 @@ const Button = ({ type, children }: ButtonProps) => {
           ? 'button-container yellow-button'
           : 'button-container purple-button'
       }
+      onClick={onClick}
     >
       {children}
     </button>
