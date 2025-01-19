@@ -17,7 +17,7 @@ Neste projeto possuem os scripts:
 
 ### `npm start`
 
-Inicie o App no modo de desenvolvimento
+Inicie o App no modo de desenvolvimento\
 Abra [http://localhost:5173](http://localhost:5173) para visitar no navegador.
 
 ### `npm test`
