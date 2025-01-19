@@ -15,12 +15,12 @@ Irá fazer com que seja adicionado a node_modules, após o ``git clone``.
 
 Neste projeto possuem os scripts:
 
-### `npm start`
+### `npm run dev`
 
 Inicie o App no modo de desenvolvimento\
 Abra [http://localhost:5173](http://localhost:5173) para visitar no navegador.
 
-### `npm test`
+### `npm run test`
 
 Inicie o teste no watch mode.
 
